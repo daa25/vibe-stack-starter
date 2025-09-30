@@ -2,6 +2,9 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Home, Calculator, Plane, ArrowRight, Zap, DollarSign, Rocket } from "lucide-react";
 import { Link } from "react-router-dom";
+import vibelinkHero from "@/assets/vibelink-hero.jpg";
+import reapsowHero from "@/assets/reapsow-hero.jpg";
+import travelquestHero from "@/assets/travelquest-hero.jpg";
 
 const Index = () => {
   const funnels = [
@@ -14,6 +17,7 @@ const Index = () => {
       link: "/vibelink",
       color: "text-primary",
       ports: "Ports: 5101-5102",
+      image: vibelinkHero,
     },
     {
       icon: Calculator,
@@ -24,6 +28,7 @@ const Index = () => {
       link: "/reapsow",
       color: "text-accent",
       ports: "Port: 5201",
+      image: reapsowHero,
     },
     {
       icon: Plane,
@@ -34,6 +39,7 @@ const Index = () => {
       link: "/travelquest",
       color: "text-secondary-glow",
       ports: "Port: 5301",
+      image: travelquestHero,
     },
   ];
 
@@ -106,9 +112,17 @@ const Index = () => {
 
         <div className="grid lg:grid-cols-3 gap-8">
           {funnels.map((funnel, index) => (
-            <Card key={index} className="bg-gradient-card shadow-card hover:shadow-glow transition-all duration-300">
+            <Card key={index} className="bg-gradient-card shadow-card hover:shadow-glow transition-all duration-300 overflow-hidden group">
+              <div className="relative h-48 overflow-hidden">
+                <img 
+                  src={funnel.image} 
+                  alt={`${funnel.title} - ${funnel.subtitle}`}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent" />
+                <funnel.icon className={`absolute top-4 right-4 h-10 w-10 ${funnel.color} drop-shadow-lg`} />
+              </div>
               <CardHeader>
-                <funnel.icon className={`h-12 w-12 mb-4 ${funnel.color}`} />
                 <CardTitle className="text-2xl">{funnel.title}</CardTitle>
                 <CardDescription className="text-base font-medium">{funnel.subtitle}</CardDescription>
               </CardHeader>
