@@ -224,9 +224,11 @@ const VibeLink = () => {
                       </li>
                     ))}
                   </ul>
-                  <Button variant="cta" className="w-full">
-                    <QrCode className="h-4 w-4 mr-2" />
-                    View Kit Details
+                  <Button variant="cta" className="w-full" asChild>
+                    <Link to={`/vibelink/checkout?kit=${kit.qrLink.split('/').pop()}`}>
+                      <QrCode className="h-4 w-4 mr-2" />
+                      Purchase Kit
+                    </Link>
                   </Button>
                 </CardContent>
               </Card>

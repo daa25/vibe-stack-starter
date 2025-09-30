@@ -191,11 +191,11 @@ const TravelQuest = () => {
           </CardHeader>
           <CardContent>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="hero" size="lg">
-                View All Deals
+              <Button variant="hero" size="lg" asChild>
+                <Link to="/travelquest">View All Deals</Link>
               </Button>
-              <Button variant="outline" size="lg">
-                Subscribe for Updates
+              <Button variant="outline" size="lg" asChild>
+                <Link to="/travelquest/subscribe">Subscribe for Updates</Link>
               </Button>
             </div>
           </CardContent>

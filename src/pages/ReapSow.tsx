@@ -232,8 +232,8 @@ const ReapSow = () => {
                 <p className="text-sm text-muted-foreground mb-4">
                   We offer a complete "No-Capital Store Starter" service to set up your entire operation.
                 </p>
-                <Button variant="cta" className="w-full">
-                  Book Setup Call
+                <Button variant="cta" className="w-full" asChild>
+                  <Link to="/reapsow/consultation">Book Setup Call</Link>
                 </Button>
               </CardContent>
             </Card>
