@@ -1,0 +1,88 @@
+{
+  "deals": [
+    {
+      "id": "miami-heat",
+      "title": "Miami Heat VIP Experience",
+      "destination": "Miami, FL",
+      "description": "Premium seats + Hotel + City tour",
+      "price": "$899",
+      "dates": "Mar 15-17, 2025",
+      "category": "Sports",
+      "features": [
+        "Court-side seats",
+        "4-star hotel",
+        "Welcome dinner"
+      ]
+    },
+    {
+      "id": "tampa-bay-bucs",
+      "title": "Tampa Bay Buccaneers Package",
+      "destination": "Tampa, FL",
+      "description": "Game day + Beach resort stay",
+      "price": "$749",
+      "dates": "Oct 8-10, 2025",
+      "category": "Sports",
+      "features": [
+        "50-yard line seats",
+        "Beach resort",
+        "Team store credit"
+      ]
+    },
+    {
+      "id": "orlando-magic",
+      "title": "Orlando Magic Weekend",
+      "destination": "Orlando, FL",
+      "description": "Basketball + Theme parks combo",
+      "price": "$1,299",
+      "dates": "Apr 22-25, 2025",
+      "category": "Sports",
+      "features": [
+        "Premium seats",
+        "Theme park tickets",
+        "Downtown hotel"
+      ]
+    },
+    {
+      "id": "caribbean-cruise",
+      "title": "Caribbean Sports Cruise",
+      "destination": "Multiple Ports",
+      "description": "7-day cruise with live sports viewing",
+      "price": "$1,899",
+      "dates": "Jun 14-21, 2025",
+      "category": "Cruise",
+      "features": [
+        "All-inclusive",
+        "Sports bar access",
+        "Excursions"
+      ]
+    },
+    {
+      "id": "key-west",
+      "title": "Key West Sailing Adventure",
+      "destination": "Key West, FL",
+      "description": "Sunset sailing + Fishing tournament",
+      "price": "$599",
+      "dates": "May 5-8, 2025",
+      "category": "Adventure",
+      "features": [
+        "Private yacht",
+        "Fishing gear",
+        "Island hopping"
+      ]
+    },
+    {
+      "id": "nashville-nights",
+      "title": "Nashville Sports & Music",
+      "destination": "Nashville, TN",
+      "description": "Titans game + Live music scene",
+      "price": "$849",
+      "dates": "Sep 12-14, 2025",
+      "category": "Sports",
+      "features": [
+        "Stadium seats",
+        "Broadway shows",
+        "BBQ dinner"
+      ]
+    }
+  ]
+}
