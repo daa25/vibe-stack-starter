@@ -9,6 +9,7 @@ import { Home, Wrench, QrCode, ArrowLeft, Paintbrush, Hammer, Leaf, Lightbulb, D
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/vibelink-professionals.jpg";
 import nestkitImage from "@/assets/nestkit-products.jpg";
+import servicesShowcase from "@/assets/vibelink-services-showcase.jpg";
 
 const VibeLink = () => {
   const { toast } = useToast();
@@ -154,9 +155,19 @@ const VibeLink = () => {
             </p>
           </div>
 
+          {/* Services Showcase Image */}
+          <div className="relative rounded-2xl overflow-hidden mb-12 shadow-elegant">
+            <img 
+              src={servicesShowcase} 
+              alt="Professional home improvement services showcase"
+              className="w-full h-[500px] object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
+          </div>
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             {services.map((service, index) => (
-              <Card key={index} className="bg-gradient-card shadow-card hover:shadow-glow transition-all duration-300">
+              <Card key={index} className="bg-gradient-card shadow-card hover:shadow-glow transition-all duration-300 hover-scale">
                 <CardHeader>
                   <service.icon className="h-10 w-10 text-primary mb-3" />
                   <CardTitle className="text-xl">{service.title}</CardTitle>
