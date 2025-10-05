@@ -110,15 +110,6 @@ const VibeLink = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <header className="border-b border-border">
-        <div className="container mx-auto px-4 py-4">
-          <Link to="/" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
-            <ArrowLeft className="h-4 w-4" />
-            <span>Back to Hub</span>
-          </Link>
-        </div>
-      </header>
-
       <main>
         {/* Hero Section with Image */}
         <div className="relative h-[600px] bg-gradient-to-br from-primary/20 to-accent/20 overflow-hidden">
